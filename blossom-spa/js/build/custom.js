@@ -123,13 +123,13 @@ jQuery(document).ready(function($) {
 
     //team slider
     var loopState;
-    var teamItemCount = $('.team-section .grid').children('.widget').length;
+    var teamItemCount = $('.team-section .owl-carousel').children('.widget').length;
     if(teamItemCount <= 4) {
         loopState = false;
     }else {
         loopState = true;
     }
-    $('.team-section .grid').owlCarousel({
+    $('.team-section .owl-carousel').owlCarousel({
         items: 4,
         nav: true,
         dots: true,
@@ -157,13 +157,13 @@ jQuery(document).ready(function($) {
 
     //testimonial slider
      var testloopState;
-    var testItemCount = $('.testimonial-section .grid').children('.widget').length;
+    var testItemCount = $('.testimonial-section .owl-carousel').children('.widget').length;
     if(testItemCount == 1) {
         testloopState = false;
     }else {
         testloopState = true;
     }
-    $('.testimonial-section .grid').owlCarousel({
+    $('.testimonial-section .owl-carousel').owlCarousel({
         items: 1,
         nav: true,
         dots: true,

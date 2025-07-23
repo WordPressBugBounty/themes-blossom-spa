@@ -14,7 +14,7 @@ if( is_active_sidebar( 'team' ) ){ ?>
 			if( !empty( $team_title ) ) echo '<h2 class="section-title">' . esc_html( $team_title ) . '</h2>';
 			if( !empty( $team_content ) ) echo '<div class="section-desc">' .  esc_html( $team_content ) . '</div>';
 		endif; ?>
-		<div class="grid owl-carousel">
+		<div class="owl-carousel">
 	    	<?php dynamic_sidebar( 'team' ); ?>
 	    </div>
 	</div>

@@ -15,7 +15,7 @@ if( is_active_sidebar( 'testimonial' ) ){ ?>
 			if( !empty( $testimonial_title ) ) echo '<h2 class="section-title">' . esc_html( $testimonial_title ) . '</h2>';
 			if( !empty( $testimonial_content ) ) echo '<div class="section-desc">' . wpautop( wp_kses_post( $testimonial_content ) ) . '</div>';
 		endif; ?>
-		<div class="grid owl-carousel">
+		<div class="owl-carousel">
     		<?php dynamic_sidebar( 'testimonial' ); ?>
     	</div>
     </div>
